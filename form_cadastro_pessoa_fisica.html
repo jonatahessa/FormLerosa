@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estiloPessoaFisicaPrint.css">
+    <script type="text/javascript" src="domPessoaFisica.js">
+    </script>
+    <title>Cadastro Pessoa Física</title>
+  </head>
+  <body>
+    <table id="cabecalho" border="1">
+      <tr>
+        <td id="logo"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"></td>
+        <td id="dadoslerosa">Lerosa S/A Corretora de Valores e Câmbio<br />
+          Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
+          Itaim Bibi - São Paulo - SP <br />
+          <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
+          Ouvidoria 0800 727 791 <br />
+          Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
+          e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></td>
+          <td id="fichacadastral"><p>FICHA CADASTRAL
+            PESSOA FÍSICA</p></td>
+          <td id="celulacampos">
+            <p><label for="codbolsa">Código Bolsa:</label>
+            <input class="camposcabecalho" type="text" name="codbolsa" /></p>
+            <p><label for="assessor">Assessor:</label>
+            <input class="camposcabecalho"type="text" name="assessor" /></p>
+            <p><label for="proxrecad">Prox. Recad:</label>
+            <input class="camposcabecalho" type="text" name="proxrecad" onkeypress="mascara(this, '##/##/####');" maxlength="10" /></p></td>
+        </tr>
+    </table>
+
+    <form class="formulario" method="post">
+
+      <div id="nomecompleto">
+        <label for="nomecompleto">Nome Completo</label>
+        <input id="camponomecompleto" class="campos" type="text" name="nomecompleto" />
+      </div>
+
+      <div id="emailprincipal">
+        <label for="emailprincipal">E-mail - Principal</label>
+        <input id="campoemailprincipal" class="campos" type="text" name="emailprincipal" />
+      </div>
+
+      <div id="emailsecundario">
+        <label for="emailsecunario">E-mail - Secundario</label>
+        <input id="campoemailsecundario" class="campos" type="text" name="emailsecundario" />
+      </div>
+
+      <div id="telefonecelular">
+        <label for="telefonecelular">Tel. Celular (DDD+Número)</label>
+        <input id="campotelefonecelular" class="campos" type="text" name="telefonecelular" onkeypress="mascara(this, '### #####-####');" maxlength="14" />
+      </div>
+
+      <div id="telefoneresidencial">
+        <label for="telefoneresidencial">Tel. Residencial (DDD+Número)</label>
+        <input id="campotelefoneresidencial" class="campos" type="text" name="telefoneresidencial" onkeypress="mascara(this, '### ####-####');" maxlength="13"/>
+      </div>
+
+      <div id="telefonecomercial">
+        <label for="telefonecomercial">Tel. Comercial (DDD+Número)</label>
+        <input id="campotelefonecomercial" class="campos" type="text" name="telefonecomercial" onkeypress="mascara(this, '### ####-####');" maxlength="13"/>
+      </div>
+
+      <div id="datanasc">
+        <label for="datanasc">Data de Nascimento</label>
+        <input id="campodatanasc" class="campos" type="text" name="datanasc" onkeypress="mascara(this, '##/##/####')" maxlength="10"/>
+      </div>
+
+      <div id="localnasc">
+        <label for="localnasc">Local de Nascimento</label>
+        <input id="campolocalnasc" class="campos" type="text" name="localnasc" />
+      </div>
+
+    <div id="estadonasc">
+        <label class="labelsmall" for="estado">Estado</label>
+        <select id="selectestadonasc" class="campos selects" name="estado">
+          <option value=""></option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+    </div>
+
+    <div id="nacionalidade">
+      <label for="nacionalidade">Nacionalidade</label>
+      <input id="camponacionalidade" class="campos" type="text" name="nacionalidade" />
+    </div>
+
+    <div id="sexo">
+      <label for="sexo">Sexo</label>
+      <select id="selectsexo" class="campos selects" name="sexo">
+        <option value=""></option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+    </div>
+
+    <div id="estadocivil">
+      <label for="estadocivil">Estado Civil</label>
+      <select id="selectestadocivil" class="campos selects" name="estadocivil">
+        <option value=""></option>
+        <option value="solteiro">Solteiro</option>
+        <option value="viuvo">Viúvo(a)</option>
+        <option value="casadocombrasileiro">Casado(a) com Brasileiro(a) Nato(a)</option>
+        <option value="casadocomnaturalizado">Casado(a)com Brasileiro(a) Naturalizado(a)</option>
+        <option value="casadocomestrangeiro">Casado(a) com Estrangeiro(a)</option>
+        <option value="uniaoestavel">União Estável</option>
+        <option value="desquitado">Desquitado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="separado">Separado(a) Judicialmente</option>
+      </select>
+    </div>
+
+    <div id="regimedebens">
+      <label for="regimedebens">Regime de Bens</label>
+      <select id="selectregimedebens" class="campos selects" name="regimedebens">
+        <option value=""></option>
+        <option value="naoseaplica">Não se aplica</option>
+        <option value="separacaodebens">Separação Total de Bens</option>
+        <option value="comunhaouniversal">Comunhão Universal de Bens</option>
+        <option value="comunhaoparcial">Comunhão Parcial de Bens</option>
+      </select>
+    </div>
+
+    <div id="profissao">
+      <label for="profissao">Profissão</label>
+      <input id="campoprofissao" class="campos" type="text" name="profissao" />
+    </div>
+
+    <div id="cpf">
+      <label for="cpf">CPF</label>
+      <input id="campocpf" class="campos" type="text" name="cpf" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" />
+    </div>
+
+    <div id="tipodoc">
+      <label for="tipodoc">Doc. Identificação</label>
+      <select id="selecttipodoc" class="campos selects" name="tipodoc">
+        <option value=""></option>
+        <option value="rg">Carteira de Identidade (RG)</option>
+        <option value="funcional">Carteira de Identificação Funcional</option>
+        <option value="cnh">CNH</option>
+        <option value="rne">Registro Nacional de Estrangeiro (RNE)</option>
+      </select>
+    </div>
+
+    <div id="numdoc">
+      <label for="numdoc">Num. Doc.</label>
+      <input id="camponumdoc" class="campos" type="text" name="numdoc" />
+    </div>
+
+    <div id="dataemissao">
+      <label for="dataemissao">Data Emissão</label>
+      <input id="campodatadeemissao" class="campos" type="text" name="dataemissao" onkeypress="mascara(this, '##/##/####')" maxlength="10" />
+    </div>
+
+    <div id="orgaoemissor">
+      <label for="orgaoemissor">Órgão Emissor</label>
+      <input id="campoorgaoemissor" class="campos" type="text" name="orgaoemissor" />
+    </div>
+
+    <div id="ufemissor">
+      <label for="ufemissor">UF</label>
+        <select id="selectufemissor" class="campos selects" name="estado">
+          <option value=""></option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+    </div>
+
+    <div id="enderecoresidencia">
+      <label for="enderecoresidencia">Enderço Residencial</label>
+      <input id="campoenderecoresidencia" class="campos" type="text" name="enderecoresidencia" />
+    </div>
+
+    <div id="numeroresidencia">
+      <label for="numeroresidencia">Número</label>
+      <input id="camponumeroresidencia" class="campos" type="text" name="numeroresidencia" />
+    </div>
+
+    <div id="complementoresidencia">
+      <label for="complementoresidencia">Complemento</label>
+      <input id="campocomplementoresidencia" class="campos" type="text" name="complementoresidencia" />
+    </div>
+
+    <div id="cepresidencia">
+      <label for="cepresidencia">CEP</label>
+      <input id="campocepresidencia" class="campos" type="text" name="cepresidencia" onkeypress="mascara(this, '#####-###')" maxlength="9" />
+    </div>
+
+    <div id="bairroresidencia">
+      <label for="bairroresidencia">Bairro</label>
+      <input id="campobairroresidencia" class="campos" type="text" name="bairroresidencia" />
+    </div>
+
+    <div id="cidaderesidencia">
+      <label for="cidaderesidencia">Cidade</label>
+      <input id="campocidaderesidencia" class="campos" type="text" name="cidaderesidencia" />
+    </div>
+
+    <div id="estadoresidencia">
+      <label for="campoestadoresidencia">Estado</label>
+        <select id="selectestadoresidencia" class="campos selects" name="estado">
+          <option value=""></option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+    </div>
+
+    <div id="nomeconjuge">
+      <label for="nomeconjuge">Nome Completo do(a) Cônjuge / Compaheiro(a)</label>
+      <input id="camponomeconjuge" class="campos" type="text" name="nomeconjuge" />
+    </div>
+
+    <div id="nomedamae">
+      <label for="nomedamae">Nome Completo da Mãe</label>
+      <input id="camponomedamae" class="campos" type="text" name="nomedamae" />
+    </div>
+
+    <div id="nomedopai">
+      <label for="nomedopai">Nome Compledo do Pai / Responsável Legal / Tutor(a) ou Curador(a)</label>
+      <input id="camponomedopai" class="campos" type="text" name="nomedopai" />
+    </div>
+
+    <div id="instituicao">
+      <label for="instituicao">Instituição onde Trabalha</label>
+      <input id="campoinstituicao" class="campos" type="text" name="instituicao" />
+    </div>
+
+    <div id="enderecocomercial">
+      <label for="enderecocomercial">Endereço Comercial</label>
+      <input id="campoenderecocomercial" class="campos" type="text" name="enderecocomercial" />
+    </div>
+
+    <div id="numerocomercial">
+      <label for="numerocomercial">Número</label>
+      <input id="camponumerocomercial" class="campos" type="text" name="numerocomercial" />
+    </div>
+
+    <div id="complementocomercial">
+      <label for="complementocomercial">Complemento</label>
+      <input id="campocomplementocomercial" class="campos" type="text" name="complementocomercial" />
+    </div>
+
+    <div id="cepcomercial">
+      <label for="cepcomercial">CEP</label>
+      <input id="campocepcomercial" class="campos" type="text" name="cepcomercial" onkeypress="mascara(this, '#####-###');" maxlength="9"/>
+    </div>
+
+    <div id="bairrocomercial">
+      <label for="bairrocomercial">Bairro</label>
+      <input id="campobairrocomercial" class="campos" type="text" name="bairrocomercial" />
+    </div>
+
+    <div id="cidadecomercial">
+      <label for="cidadecomercial">Cidade</label>
+      <input id="campocidadecomercial" class="campos" type="text" name="cidadecomercial" />
+    </div>
+
+    <div id="estadocomercial">
+      <label for="estadocomercial">Estado</label>
+        <select id="selectestadocomercial" class="campos selects" name="estado">
+          <option value=""></option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+    </div>
+
+    <div id="fonteconsulta">
+      <p id="labelconsulta">Fontes de Referência Consultadas:</p>
+      <label><input class="consulta" type="checkbox" name="fonteconsulta">RECEITA FEDERAL</label>
+      <label><input class="consulta" type="checkbox" name="fonteconsulta">CADASTRO DE INVESTIDORES CBLC/BMFBOVESPA</label>
+    </div>
+
+    <div id="contasbancarias">
+      <table id="tabelacontas" border="1">
+        <tr>
+          <caption>Contas Bancárias para Liquidação Financeira</caption>
+        </tr>
+        <tr>
+        <th id="celulabanco">Banco</th>
+        <th id="celulaagencia">Agência</th>
+        <th id="celulaconta">Conta + Díg.</th>
+        <th id="celulatipo">Tipo</th>
+        <th id="celulaconsulta">Conjunta</th>
+        <th id="celulasegundotitular">Nome do Segundo Titular</th>
+        <th id="celulacpf">CPF</th>
+        </tr>
+        <tr>
+          <td><input class="campostable" type="text" name="banco1"></td>
+          <td><input class="campostable" type="text" name="agencia1"></td>
+          <td><input class="campostable" type="text" name="contadig1"></td>
+          <td><select class="campostable selects" name="tipo1">
+            <option value=""></option>
+            <option value="corrente">Conta-Corrente</option>
+            <option value="poupanca">Poupança</option>
+          </select></td>
+          <td><select class="campostable selects" name="conjunta1">
+            <option value=""></option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select></td>
+          <td><input class="campostable" type="text" name="segundotitula1"></td>
+          <td><input class="campostable" type="text" name="cpf1" onkeypress="mascara(this, '###.###.###-##');" maxlength="14"></td>
+        </tr>
+        <tr>
+          <td><input class="campostable" type="text" name="banco2"></td>
+          <td><input class="campostable" type="text" name="agencia2"></td>
+          <td><input class="campostable" type="text" name="contadig2"></td>
+          <td><select class="campostable selects" name="tipo2">
+            <option value=""></option>
+            <option value="corrente">Conta-Corrente</option>
+            <option value="poupanca">Poupança</option>
+          </select></td>
+          <td><select class="campostable selects" name="conjunta2">
+            <option value=""></option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select></td>
+          <td><input class="campostable" type="text" name="segundotitular2"></td>
+          <td><input class="campostable" type="text" name="cpf2" onkeypress="mascara(this, '###.###.###-##');" maxlength="14"></td>
+        </tr>
+        <tr>
+          <td><input class="campostable" type="text" name="banco3"></td>
+          <td><input class="campostable" type="text" name="agencia3"></td>
+          <td><input class="campostable" type="text" name="contadig3"></td>
+          <td><select class="campostable selects" name="tipo3">
+            <option value=""></option>
+            <option value="corrente">Conta-Corrente</option>
+            <option value="poupanca">Poupança</option>
+          </select></td>
+          <td><select class="campostable selects" name="conjunta3">
+            <option value=""></option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select></td>
+          <td><input class="campostable" type="text" name="segundotitular3"></td>
+          <td><input class="campostable" type="text" name="cpf3" onkeypress="mascara(this, '###.###.###-##');" maxlength="14"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="obs">
+      <p id="obs1">Obs: 1. Em caso de Conta Conjunta é Obrigatória a apresentação do comprovante de titularidade Bancária;</p>
+        <p id="obs2">2. Somente serão consideradas como conta de Liquidação / Recepção de recursos a(s) conta(s) supra com todos os dados
+        declarados e comprovados.</p>
+    </div>
+
+    <div id="opcaocorrespondencia">
+      <p id="paragrafoopcao">Opção para correspondência</p>
+      <label id="labelcheckcomercial">Residencial<input id="checkresidencial" type="checkbox" name="opcaocorrespondencia" value="residencial"></label>
+      <label>Comercial<input id="checkcomercial" type="checkbox" name="opcaocorrespondencia" value="comercial"></label>
+      <label>Outros Discriminar<input id="checkoutros" type="checkbox" name="opcaocorrespondencia" value="outro"></label>
+      <input id="inputdiscriminacao" class="campos" type="text" name="discriminacao">
+    </div>
+
+    <div id="contapropria">
+      <p id="paragrafocontapropria">1. Opera por Conta Própria?</p>
+      <label>Sim
+      <input id="checksim" type="checkbox" name="sim" value="sim">
+      </label>
+      <label>Não
+      <input id="checknao" type="checkbox" name="nao" value="nao">
+      </label>
+    </div>
+
+    <div id="autorizatransmissao">
+      <p>2. Autoriza a transmissão de ordens por procurador ou representante?
+      <label><input type="checkbox" name="autorizanao">
+      Não</label>
+      <label><input type="checkbox" name="autorizasim">
+      Sim</label> (Se sim, <a href="form_nomeacao_procurador.html" target="_blank">Preencher a ficha de identificação de
+procurador</a>). Em caso de eventual revogação do mandato comprometo-me a informar à Corretora.</p>
+    </div>
+
+    <div id="assinatura">
+      <label for="assinatura">Assinatura
+      <input id="inputassinatura" class="campos" type="text" name="assinatura"></label>
+    </div>
+
+    <div id="cabecalho2">
+      <table id="tabelacabecalho2"border="1">
+        <tr>
+          <td id="logo2"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"></td>
+          <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
+            Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
+            Itaim Bibi - São Paulo - SP <br />
+            <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
+            Ouvidoria 0800 727 791 <br />
+            Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
+            e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
+            <td id="declaracoesdocliente"><p>DECLARAÇÕES DO CLIENTE</p></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="pessoasindicadas">
+      <p id="item3">3. Autorizo a(s) Pessoas(s) indicada(s) abaixo a emitir ordens de operações:</p>
+      <table id="tabelapessoas" border="1">
+        <tr class="camposindicados">
+          <th id="nomeindicado">Nome</th>
+          <th id="rgindicado">RG</th>
+          <th id="cpfindicado">CPF/MF</th>
+        </tr>
+        <tr class="camposindicados">
+          <td><input class="campostable" type="text" name="nome1" /></td>
+          <td><input class="campostable" type="text" name="rg1" /></td>
+          <td><input class="campostable" type="text" name="cpf1" onkeypress="mascara(this, '###.###.###-##');" maxlength="14" /></td>
+        </tr>
+        <tr class="camposindicados">
+          <td><input class="campostable" type="text" name="nome2" /></td>
+          <td><input class="campostable" type="text" name="rg2" /></td>
+          <td><input class="campostable" type="text" name="cpf2" onkeypress="mascara(this, '###.###.###-##');" maxlength="14" /></td>
+        </tr>
+        <tr class="camposindicados">
+          <td><input class="campostable" type="text" name="nome3" /></td>
+          <td><input class="campostable" type="text" name="rg3" /></td>
+          <td><input class="campostable" type="text" name="cpf3" onkeypress="mascara(this, '###.###.###-##');" maxlength="14"/></td>
+        </tr>
+        <tr class="camposindicados">
+          <td><input class="campostable" type="text" name="nome4" /></td>
+          <td><input class="campostable" type="text" name="rg4" /></td>
+          <td><input class="campostable" type="text" name="cpf4" onkeypress="mascara(this, '###.###.###-##');" maxlength="14" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="paragrafos">
+      <p class="termos">4. É pessoa Vinculada à Corretora (Conceito definido pela Instrução CVM n.º 505/11)? <label><input type="checkbox" name="" value="nao">Não</label><label><input type="checkbox" name="sim" value="sim">Sim</label></p>
+      <p class="termos"><label><input type="checkbox" name="concordo" value="concordo" />
+      Concordo</label>
+      <label><input type="checkbox" name="naoconcordo" value="naoconcordo" />
+      Não Concordo</label>
+      <label><input type="checkbox" name="sobconsulta" value="sobconsulta" />
+      Concordo sob consulta</label>, que a carteira própria da Corretora ou a carteira de pessoas vinculadas possam atuar na contraparte das operações que ordeno;</p>
+      <p class="termos">6. São consideradas validas as ordens transmitidas
+      <label><input type="checkbox" name="verbalescrito" value="verbalescrito" />Verbalmente e/ou por Escrito;</label>
+      <label><input type="checkbox" name="verbal" value="verbal" />Somente Verbalmente;</label>
+      <label><input type="checkbox" name="escrito" value="escrito" />Somente por Escrito.</label></p>
+      <p class="termos">7. Não estou impedido de operar no mercado de valores mobiliários;</p>
+      <p class="termos">8. Tenho conhecimento do disposto na Instrução CVM n.º 301/99, 419/05 , 463/08 e 505/11, das Lei 9.613/98 e da Circular 3.461/09 do Banco Central do Brasil, das regras e parâmetros de atuação da Corretora, das normas referentes ao fundo de garantia das bolsas, e das normas operacionais editadas pelas bolsas e pela câmara de compensação e liquidação disponíveis nos respectivos sites;</p>
+      <p class="termos">9. Tenho conhecimento de que as operações realizadas no sistema de negociação de títulos e valores mobiliários mantidos pela SOMA não contam com a proteção de fundo de garantia;</p>
+      <p class="termos">10. Estou ciente de que não devo entregar ou receber, por qualquer razão, numerário, títulos ou valores mobiliários, ou quaisquer outros valores por meio de Agente Autônomo de Investimentos ou de Prepostos da Corretora, bem como de que eles não poderão ser meus procuradores;</p>
+      <p class="termos">11. Autorizo a Corretora, caso existam débitos pendentes em meu nome, a liquidar, em bolsa ou em câmaras de compensação e liquidação, os contratos, direitos e ativos, adquiridos por minha conta e ordem, bem como a executar bens e direitos dados em garantia de minhas operações ou que estejam em poder da Corretora, aplicando o produto da venda no pagamento dos débitos pendentes, independentemente de notificação judicial ou extrajudicial;</p>
+      <p class="termos">12. Mediante este documento, adiro aos termos do contrato de prestação de serviços de Custódia Fungível de Ativos da CBLC, firmado por esta Corretora, outorgando à CBLC poderes para, na qualidade de proprietário fiduciário, transferir para seu nome, nas companhias emitentes, os ativos de minha propriedade;</p>
+      <p class="termos">13. Estou ciente de que minhas conversas com a Corretora e seus profissionais, para tratar de quaisquer assuntos relativos às minhas operações poderão ser gravadas, podendo o conteúdo ser usado como prova no esclarecimento de questões relacionadas à minha conta e minhas operações nesta Corretora;</p>
+      <p class="termos">14. São verdadeiras as informações fornecidas para o preenchimento deste cadastro, e <u><b>comprometo-me a informar, no prazo de dez dias, quaisquer alterações que vierem a ocorrer nos meus dados cadastrais.</b></u></p>
+      <p class="termos">15. <label><input type="checkbox" name="pessoaexposta" value="nao">Não sou</label><label><input type="checkbox" name="pessoaexposta" value="sim">Sou pessoa politicamente exposta,</label>  tal como definido no artigo 1º, § 1º, da Resolução COAF nº 16/07, no artigo 3º, da Deliberação COREMEC nº 2/06 e no artigo 1º, § 2º, da Circular BACEN nº 3.461/09, ou seja, pessoa que atualmente, ou nos últimos cinco anos: (i)desempenha ou tenha desempenhado cargos, empregos ou funções públicas relevantes, ligados aos Poderes Executivo, Legislativo ou Judiciário, no Brasil ou em outros países, territórios e dependências estrangeiras; (ii) ocupa ou tenha ocupado posição de dirigente de empresa pública ou de dirigente de partidos políticos; (iii)exerce ou tenha exercido mandatos eletivos dos Poderes Executivo e Legislativo da União ou cargo no Poder Executivo da União; ou (iv) que seja representante, familiar - parente na linha reta até o primeiro grau, cônjuge, companheiro(a) ou enteado (a), estreito colaborador ou pessoa de relacionamento próximo das pessoas mencionadas acima.</p>
+      <p class="termos">16. Tenho conhecimento das normas de funcionamento do mercado de títulos e valores mobiliários, bem como conheço os riscos inerentes às aplicações nos mercados, decorrentes especialmente da utilização de instrumentos de derivativos financeiros, operações em bolsas de valores e de mercadorias, inclusive mercado à vista, BTC, de índices e de futuros, e de opções de ações ou commodities e mercado de câmbio, estando tais operações sujeitas a condições de mercado que poderão levar a possibilidade de ocorrência de patrimônio negativo, bem como, se for o caso, de eventual responsabilidade por consequentes aportes adicionais de recursos.</p>
+      <p class="termos">17. Autorizo a Lerosa S/A a prestar informações, bem como consultar informações junto ao Banco Central do Brasil; nos termos da Resolução nº 2.390/97 e Circular nº 2.756/97.</p>
+      <p class="termos">18. Declaro que o propósito e natureza da relação do negócio com a Corretora é a possibilidade de operar nos mercados de renda variável, derivativos e renda fixa, mas não obrigatoriamente em todos os segmentos.</p>
+    </div>
+
+    <div id="assinaturacliente">
+      <label class="camposemblock"><input id="assinatura2" class="campos" type="text">Assinatura</label>
+    </div>
+
+    <div id="local">
+      <label class="camposemblock"><input id="campolocal" class="campos" type="text" name="local" />
+      Local</label>
+    </div>
+
+    <div id="data">
+      <label class="camposemblock"><input id="campodata" class="campos" type="text" name="data" onkeypress="mascara(this, '##/##/####');" maxlength="10"/>Data</label>
+    </div>
+
+    <div id="exclusivo">
+      <p><b>PARA USO EXCLUSIVO DA LEROSA S/A CORRETORA DE VALORES E CÂMBIO DECLARAÇÃO DO RESPONSÁVEL PELO CADASTRAMENTO</b></p>
+    </div>
+
+    <div id="responsabiliza">
+      <p>"Responsabilizo-me pela exatidão das informações constantes da ficha, bem como pelos elementos de identificação e demais informações apresentadas”.</p>
+    </div>
+
+    <div id="assinaturacadastrante">
+        <label for="campocadastrante"><input id="campocadastrante" class="campos" type="text" name="assinaturacadastrante">Lerosa S/A Corretora de Valores e Câmbio <br/> Assinatura do responsável pelo cadastro</label>
+    </div>
+
+    <div id="localcadastro">
+      <label><input type="text" name="localcadastro" class="campos" placeholder="São Paulo">Local</label>
+    </div>
+
+    <div id="datacadastro">
+      <label><input type="text" name="datacadastro" class="campos" onkeypress="mascara(this, '##/##/####');" maxlength="10" >Data</label>
+    </div>
+    </form>
+  </body>
+</html>

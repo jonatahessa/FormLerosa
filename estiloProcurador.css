@@ -1,0 +1,398 @@
+/* Ajusta a página ao padrão tela inteira */
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+hr {
+  width: 95%;
+  height: 5px;
+  background-color: #660002;
+  margin-top: 10px;
+
+}
+
+option {
+  font-size: 12px;
+}
+
+button {
+  position: absolute;
+  bottom: 0%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  border-color: red;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+/* Define as características dos campos de texto */
+.campos {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 25px;
+  font-size: 16px;
+}
+
+.camposdestacados {
+  background-color: #ffc2c2;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: red;
+  border-width: thin;
+  height: 25px;
+  font-size: 16px;
+}
+
+.labellocaldata {
+  display: block;
+}
+
+.labelslarge {
+  font-family: sans-serif, Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.labelsmall {
+  font-family: Calibri;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.assinatura {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: thin;
+  border-color: black;
+  width: 40%;
+  margin-top: 40px;
+}
+
+.selects {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#logo {
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+  width: 100px;
+}
+
+/* Sessão dentro do body que contém todos os elementos da tela */
+#sec1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* Título da página */
+#titulo {
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#razaosocial {
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-bottom: 10px;
+}
+
+#camporazao {
+  margin-top: 5px;
+  width: 95%;
+}
+
+#cnpj {
+  margin-left: 8%;
+}
+
+#campocnpj {
+  margin-top: 5px;
+  width: 40%;
+}
+
+#poderesoutorgados {
+  width: 87.5%;
+  margin-left: 8%;
+}
+
+#rotulopoderes {
+  padding: 3px;
+}
+
+#checkpoderes {
+  margin-left: 8%;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#nomeprocurador {
+  width: 93.5%;
+  margin-left: 2%;
+  margin-top: 25px;
+}
+
+#campoprocurador {
+  width: 100%;
+  margin-top: 4px;
+}
+
+#endereco {
+  margin-top: 6px;
+  margin-left: 2%;
+  float: left;
+  width: 60%;
+}
+
+#campoendereco {
+  width: 100%;
+  margin-top: 4px;
+}
+
+#numero {
+  margin-top: 6px;
+  float: left;
+  margin-left: 5px;
+  width: 10%;
+}
+
+#camponumero {
+  width: 100%;
+  margin-top: 4px;
+  text-align: center;
+}
+
+#complemento {
+  float: left;
+  margin-left: 5px;
+  width: 22.5%;
+  margin-top: 6px;
+}
+
+#campocomplemento {
+  width: 100%;
+  margin-top: 4px;
+}
+
+#cep {
+  margin-left: 2%;
+  width:15%;
+  float: left;
+  margin-top: 6px;
+}
+
+#campocep {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+
+#bairro {
+  width: 35%;
+  margin-left: 5px;
+  float: left;
+  margin-top: 6px;
+}
+
+#campobairro {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+
+#cidade {
+  float: left;
+  width: 32%;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+#campocidade {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+
+#estado {
+  margin-left: 5px;
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+#campoestado {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  text-align: center;
+  height: 28px;
+}
+
+#telefone {
+  float: left;
+  width: 25%;
+  margin-left: 2%;
+  margin-top: 6px;
+}
+
+#campotelefone {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+}
+
+#email {
+  float: left;
+  margin-left: 5px;
+  margin-top: 6px;
+  width: 68%;
+}
+
+#campoemail {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+}
+
+#cpf {
+  float: left;
+  margin-top: 6px;
+  margin-left: 2%;
+  width: 15%;
+}
+
+#campocpf {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+  width: 100%;
+}
+
+#tipodocumento {
+  float: left;
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 33%;
+}
+
+#selectdocumento {
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+  height: 28px;
+  width: 100%;
+}
+
+#numerodoc {
+  float: left;
+  margin-left: 5px;
+  margin-top: 6px;
+  width: 24%;
+}
+
+#camponumerodoc {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+}
+
+#datanasc {
+  float: left;
+  margin-left: 5px;
+  margin-top: 6px;
+  width: 20%;
+}
+
+#campodatanasc {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+}
+
+#obs {
+  float: left;
+  width: 95%;
+  font-size: 11px;
+  margin-left: 2%;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+#localdata {
+  width: 100%;
+  text-align: center;
+
+}
+
+#local {
+  width: 25%;
+  margin-right: 5px;
+  text-align: center;
+}
+
+#data {
+  width: 25%;
+  position: static;
+  text-align: center;
+  display: none;
+}
+
+
+#informacoes {
+  font-family: Arial;
+  font-size: 13px;
+  width: 96%;
+  margin-left: 2%;
+}
+
+#obrigatorio {
+  text-align: center;
+  font-family: Arial;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#ass2 {
+  margin-left: 40px;
+}
+
+#ouvidoria {
+  font-size: 11px;
+  font-family: Arial;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#assinaturas {
+  display: none;
+}
