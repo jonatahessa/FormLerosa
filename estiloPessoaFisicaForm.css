@@ -1,0 +1,642 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0.5%;
+}
+
+tr {
+  text-align: center;
+}
+
+caption {
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.campos {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 25px;
+  font-size: 15px;
+}
+
+.camposemblock {
+  display: block;
+}
+
+.campostable {
+  background-color: #e0e2ff;
+  border: none;
+  height: 15px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.camposcabecalho {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 20px;
+  width: 45%;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.consulta {
+  margin-top: 1%;
+}
+
+.formulario {
+  font-size: 17px;
+  font-family: Arial;
+  position: static;
+}
+
+.contapropria {
+  margin-top: 1px;
+}
+
+.camposindicados {
+  height: 20px;
+}
+
+#cabecalho {
+  font-family: Calibri;
+  width: 96%;
+  margin-left: 1%;
+}
+
+#fichacadastral {
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#logo {
+  width: 15%;
+  align: center;
+}
+
+#logocabecalho {
+  width: 100%;
+}
+
+#dadoslerosa {
+  width: 28%;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 1%;
+}
+
+#celulacampos {
+  width: 18%;
+  font-size: 15px;
+  align-items: center;
+}
+
+#nomecompleto {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 5px;
+}
+
+#camponomecompleto {
+  width: 100%;
+  margin-top: 3px;
+}
+
+#emailprincipal {
+  margin-left: 2%;
+  width: 46%;
+  float: left;
+  margin-top: 5px;
+}
+
+#campoemailprincipal {
+  width: 100%;
+}
+
+#emailsecundario {
+  margin-left: 1%;
+  width: 46%;
+  float: left;
+  margin-top: 5px;
+}
+
+#campoemailsecundario {
+  width: 100%;
+}
+
+#telefonecelular {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 31%;
+  float: left;
+}
+
+#campotelefonecelular {
+  width: 100%;
+}
+
+#telefoneresidencial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#campotelefoneresidencial {
+  width: 100%;
+}
+
+#telefonecomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#campotelefonecomercial {
+  width: 100%;
+}
+
+#datanasc {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 19%;
+  float: left;
+}
+
+#campodatanasc {
+  width: 100%;
+}
+
+#localnasc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 25%;
+  float: left;
+}
+
+#campolocalnasc {
+  width: 100%;
+}
+
+#estadonasc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 10%;
+  float: left;
+}
+
+#selectestadonasc {
+  width: 100%;
+  height: 28px;
+}
+
+#nacionalidade {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 20%;
+  float: left;
+}
+
+#camponacionalidade {
+  width: 100%;
+}
+
+#sexo {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 15%;
+  float: left;
+}
+
+#selectsexo {
+  width: 100%;
+  height: 28px;
+}
+
+#estadocivil {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 35%;
+  float: left;
+}
+
+#selectestadocivil {
+  width: 100%;
+  height: 28px;
+}
+
+#regimedebens {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#selectregimedebens {
+  width: 100%;
+  height: 28px;
+}
+
+#profissao {
+  margin-top: 5px;
+  margin-left: 1%;
+  margin-bottom: 1px;
+  width: 26%;
+  float: left;
+}
+
+#campoprofissao {
+  width: 100%;
+}
+
+#cpf {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 16%;
+  float: left;
+  position: relative;
+}
+
+#campocpf {
+  width: 100%;
+}
+
+#tipodoc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 22%;
+  float: left;
+}
+
+#selecttipodoc {
+  width: 100%;
+  height: 28px;
+}
+
+#numdoc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 15%;
+  float: left;
+}
+
+#camponumdoc {
+  width: 100%;
+}
+
+#dataemissao {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 13%;
+  float: left;
+}
+
+#campodatadeemissao {
+  width: 100%;
+}
+
+#orgaoemissor {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 15%;
+  float: left;
+}
+
+#campoorgaoemissor {
+  width: 100%;
+}
+
+#ufemissor {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 7%;
+  float: left;
+}
+
+#selectufemissor {
+  width: 100%;
+  height: 28px;
+}
+
+#enderecoresidencia {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 60%;
+  float: left;
+}
+
+#campoenderecoresidencia {
+  width: 100%;
+}
+
+#numeroresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#camponumeroresidencia {
+  width: 100%;
+}
+
+#complementoresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 23%;
+  float: left;
+}
+
+#campocomplementoresidencia {
+  width: 100%;
+}
+
+#cepresidencia {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 16%;
+  float: left;
+}
+
+#campocepresidencia {
+  width: 100%;
+}
+
+#bairroresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 41%;
+  float: left;
+}
+
+#campobairroresidencia {
+  width: 100%;
+}
+
+#cidaderesidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 25%;
+  float: left;
+}
+
+#campocidaderesidencia {
+  width: 100%;
+}
+
+#estadoresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#selectestadoresidencia {
+  width: 100%;
+  height: 28px;
+}
+
+#nomeconjuge {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#camponomeconjuge {
+  width: 100%;
+}
+
+#nomedamae {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#camponomedamae {
+  width: 100%;
+}
+
+#nomedopai {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#camponomedopai {
+  width: 100%;
+}
+
+#instituicao {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#campoinstituicao {
+  width: 100%;
+}
+
+#enderecocomercial {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 60%;
+  float: left;
+}
+
+#campoenderecocomercial {
+  width: 100%;
+}
+
+#numerocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#camponumerocomercial {
+  width: 100%;
+}
+
+#complementocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 23%;
+  float: left;
+}
+
+#campocomplementocomercial {
+  width: 100%;
+}
+
+#cepcomercial {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 16%;
+  float: left;
+}
+
+#campocepcomercial {
+  width: 100%;
+}
+
+#bairrocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 41%;
+  float: left;
+}
+
+#campobairrocomercial {
+  width: 100%;
+}
+
+#cidadecomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 25%;
+  float: left;
+}
+
+#campocidadecomercial {
+  width: 100%;
+}
+
+#estadocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#selectestadocomercial {
+  width: 100%;
+  height: 28px;
+}
+
+#fonteconsulta {
+  width: 93%;
+  height: 50px;
+  margin-left: 2%;
+  margin-top: 1%;
+  border: 1px solid black;
+  float: left;
+  margin-bottom: 1%;
+  font-size: 15px;
+}
+
+#labelconsulta {
+  margin-left: 1%;
+  margin-right: 3%;
+  margin-top: 1.1%;
+  float: left;
+}
+
+#contasbancarias {
+  width: 93.2%;
+  margin-left: 1.5%;
+}
+
+#tabelacontas {
+  width: 100%;
+}
+
+#celulabanco {
+  width: 20%;
+}
+
+#celulaagencia {
+  width: 10%;
+}
+
+#celulaconta {
+  width: 10%;
+}
+
+#celulatipo {
+  width: 14%;
+}
+
+#celulacpf {
+  width: 15%;
+}
+
+#obs1 {
+  margin-left: 2%;
+  margin-bottom: -10px;
+}
+
+#obs2 {
+  margin-left: 6%;
+}
+
+#opcaocorrespondencia {
+  margin-left: 2%;
+  height: 65px;
+  width: 93%;
+  border: 1px solid black;
+}
+
+#paragrafoopcao {
+  margin-top: 0.5%;
+  margin-bottom: 1px;
+  margin-left: 1%;
+}
+
+#labelcheckcomercial {
+  margin-left: 1%;
+}
+
+
+#inputdiscriminacao {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#contapropria {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#paragrafocontapropria {
+  float: left;
+  margin-right: 20px;
+}
+
+#checksim {
+  margin-top: 19px;
+}
+
+#autorizatransmissao {
+  width: 93%;
+  margin-top: -20px;
+  margin-left: 2%;
+  float: left;
+}
+
+#assinatura {
+  display: none;
+}
