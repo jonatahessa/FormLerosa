@@ -16,9 +16,19 @@ tr {
 
 caption {
   border: 1px solid black;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
 }
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+}
+
 
 .campos {
   background-color: #e0e2ff;
@@ -27,8 +37,8 @@ caption {
   border-right: none;
   border-color: black;
   border-width: thin;
-  height: 25px;
-  font-size: 15px;
+  height: 15px;
+  font-size: 12px;
 }
 
 .camposemblock {
@@ -38,8 +48,8 @@ caption {
 .campostable {
   background-color: #e0e2ff;
   border: none;
-  height: 15px;
-  font-size: 13px;
+  height: 13px;
+  font-size: 8px;
   width: 100%;
 }
 
@@ -50,9 +60,9 @@ caption {
   border-right: none;
   border-color: black;
   border-width: thin;
-  height: 20px;
+  height: 13px;
   width: 45%;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 3px;
 }
 
@@ -61,7 +71,7 @@ caption {
 }
 
 .formulario {
-  font-size: 17px;
+  font-size: 11px;
   font-family: Arial;
   position: static;
 }
@@ -71,7 +81,7 @@ caption {
 }
 
 .camposindicados {
-  height: 20px;
+  height: 13px;
 }
 
 #cabecalho {
@@ -82,13 +92,13 @@ caption {
 
 #fichacadastral {
   width: 20%;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
 }
 
 #logo {
-  width: 15%;
+  width: 11%;
   align: center;
 }
 
@@ -98,14 +108,14 @@ caption {
 
 #dadoslerosa {
   width: 28%;
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
   padding-left: 1%;
 }
 
 #celulacampos {
   width: 18%;
-  font-size: 15px;
+  font-size: 10px;
   align-items: center;
 }
 
@@ -206,7 +216,7 @@ caption {
 
 #selectestadonasc {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #nacionalidade {
@@ -229,7 +239,7 @@ caption {
 
 #selectsexo {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #estadocivil {
@@ -241,7 +251,7 @@ caption {
 
 #selectestadocivil {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #regimedebens {
@@ -253,7 +263,7 @@ caption {
 
 #selectregimedebens {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #profissao {
@@ -289,7 +299,7 @@ caption {
 
 #selecttipodoc {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #numdoc {
@@ -334,7 +344,7 @@ caption {
 
 #selectufemissor {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #enderecoresidencia {
@@ -412,7 +422,7 @@ caption {
 
 #selectestadoresidencia {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #nomeconjuge {
@@ -534,24 +544,24 @@ caption {
 
 #selectestadocomercial {
   width: 100%;
-  height: 28px;
+  height: 18px;
 }
 
 #fonteconsulta {
   width: 93%;
-  height: 50px;
+  height: 30px;
   margin-left: 2%;
   margin-top: 1%;
   border: 1px solid black;
   float: left;
   margin-bottom: 1%;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 #labelconsulta {
   margin-left: 1%;
   margin-right: 3%;
-  margin-top: 1.1%;
+  margin-top: 1.4%;
   float: left;
 }
 
@@ -562,26 +572,40 @@ caption {
 
 #tabelacontas {
   width: 100%;
+  fon
 }
 
 #celulabanco {
   width: 20%;
+  font-size: 10px;
 }
 
 #celulaagencia {
   width: 10%;
+  font-size: 10px;
 }
 
 #celulaconta {
   width: 10%;
+  font-size: 10px;
 }
 
 #celulatipo {
   width: 14%;
+  font-size: 10px;
+}
+
+#celulaconjunta {
+  font-size: 10px;
+}
+
+#celulasegundotitular {
+  font-size: 10px;
 }
 
 #celulacpf {
   width: 15%;
+  font-size: 10px;
 }
 
 #obs1 {
@@ -595,7 +619,8 @@ caption {
 
 #opcaocorrespondencia {
   margin-left: 2%;
-  height: 65px;
+  margin-top: -5px;
+  height: 45px;
   width: 93%;
   border: 1px solid black;
 }
@@ -638,5 +663,50 @@ caption {
 }
 
 #assinatura {
-  display: none;
+  width: 93%;
+  margin-left: 2%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#inputassinatura {
+  width: 80%;
+}
+
+#cabecalho2 {
+  width: 96%;
+}
+
+#tabelacabecalho2 {
+  width: 100%;
+}
+
+#logo2 {
+  width: 15%;
+}
+
+#dadoslerosa2 {
+  text-align: left;
+
+}
+
+#paragrafodados2 {
+  margin-left: 1%;
+  font-size: 11px;
+}
+
+#declaracoesdocliente {
+  font-size: 20px;
+  font-family: Calibri;
+  font-weight: bold;
+  width: 50%;
+}
+
+#pessoasindicadas {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#tabelapessoas {
+  width: 100%;
 }
