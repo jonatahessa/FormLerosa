@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="estiloPessoaFisicaPrint.css">
+    <link rel="stylesheet" href="estiloPessoaFisicaForm.css">
     <script type="text/javascript" src="domPessoaFisica.js">
     </script>
     <title>Cadastro Pessoa Física</title>
@@ -583,7 +583,9 @@ procurador</a>). Em caso de eventual revogação do mandato comprometo-me a info
       <label><input id="campodatacadastro" type="text" name="datacadastro" class="campos" onkeypress="mascara(this, '##/##/####');" maxlength="10" >Data</label>
     </div>
     </form>
-
-    <button id="imprimir" type="button" name="imprimir">Imprimir</button>
+    <div id="botao">
+      <button id="confirma" type="button" name="confirma">Confirma</button>
+      <button id="imprimir" type="button" name="imprimir">Imprimir</button>
+    </div>
   </body>
 </html>

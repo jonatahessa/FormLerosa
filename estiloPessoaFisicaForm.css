@@ -640,3 +640,71 @@ caption {
 #assinatura {
   display: none;
 }
+
+#cabecalho2 {
+  display: none;
+}
+
+#pessoasindicadas {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#tabelapessoas {
+  width: 100%;
+}
+
+.termos {
+  margin-left: 2%;
+}
+
+#assinaturacliente {
+  display: none;
+}
+#data {
+  display: none;
+}
+
+#local {
+  display: none;
+}
+
+#exclusivo {
+  display: none;
+}
+
+#responsabiliza {
+  display: none;
+}
+
+#assinaturacadastrante {
+  display: none;
+}
+
+#localcadastro {
+  display: none;
+}
+
+#datacadastro {
+  display: none;
+}
+
+#botao {
+  width: 100%;
+  height: 200px;
+}
+
+#imprimir {
+  width: 400px;
+  height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  border-color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#confirma {
+  display: none;
+}
