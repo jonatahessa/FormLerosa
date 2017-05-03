@@ -11,13 +11,13 @@
     <table id="cabecalho" border="1">
       <tr>
         <td id="logo"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"></td>
-        <td id="dadoslerosa">Lerosa S/A Corretora de Valores e Câmbio<br />
+        <td id="dadoslerosa"><p id="paragrafodados">Lerosa S/A Corretora de Valores e Câmbio<br />
           Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
           Itaim Bibi - São Paulo - SP <br />
           <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
           Ouvidoria 0800 727 791 <br />
           Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
-          e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></td>
+          e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
           <td id="fichacadastral"><p>FICHA CADASTRAL
             PESSOA FÍSICA</p></td>
           <td id="celulacampos">
@@ -572,16 +572,18 @@ procurador</a>). Em caso de eventual revogação do mandato comprometo-me a info
     </div>
 
     <div id="assinaturacadastrante">
-        <label for="campocadastrante"><input id="campocadastrante" class="campos" type="text" name="assinaturacadastrante">Lerosa S/A Corretora de Valores e Câmbio <br/> Assinatura do responsável pelo cadastro</label>
+        <label><input id="campocadastrante" class="campos" type="text" name="assinaturacadastrante">Lerosa S/A Corretora de Valores e Câmbio <br/> Assinatura do responsável pelo cadastro</label>
     </div>
 
     <div id="localcadastro">
-      <label><input type="text" name="localcadastro" class="campos" placeholder="São Paulo">Local</label>
+      <label><input id="campolocalcadastro" type="text" name="localcadastro" class="campos" placeholder="São Paulo">Local</label>
     </div>
 
     <div id="datacadastro">
-      <label><input type="text" name="datacadastro" class="campos" onkeypress="mascara(this, '##/##/####');" maxlength="10" >Data</label>
+      <label><input id="campodatacadastro" type="text" name="datacadastro" class="campos" onkeypress="mascara(this, '##/##/####');" maxlength="10" >Data</label>
     </div>
     </form>
+
+    <button id="imprimir" type="button" name="imprimir">Imprimir</button>
   </body>
 </html>
