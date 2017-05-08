@@ -189,12 +189,13 @@ function inserirDataAtual(){
 
 			dataFormat = vdia + "/" + vmes + "/" + vano;
 
-			document.getElementById("data").value = dataFormat;
+			document.getElementById('data').value = dataFormat;
   }
 
 function assinaturas() {
   document.getElementById('assinaturas').style.display = "block";
   document.getElementById('data').style.display = "inline";
+  document.getElementById('labeldata').style.display = "inline";
 }
 
 function remover() {

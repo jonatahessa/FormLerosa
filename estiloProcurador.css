@@ -63,8 +63,12 @@ select::-ms-expand {
   font-size: 16px;
 }
 
-.labellocaldata {
+#labellocal {
   display: block;
+}
+
+#labeldata {
+  display: none;
 }
 
 .labelslarge {
