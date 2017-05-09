@@ -3,6 +3,10 @@ var pontos = 0;
 
 function main() {
   inserirDataAtual();
+  var imprimir = document.querySelector('#imprimir');
+  var confirma = document.querySelector('#confirma');
+  imprimir.addEventListener("click", changeCSS);
+  confirma.addEventListener("click", confirmar)
   var inputs = document.getElementsByClassName('radios');
   for (var i = 0; i < inputs.length; i++) {
       inputs[i].addEventListener("click", resultado);
@@ -61,6 +65,19 @@ function inserirDataAtual(){
     }
     document.getElementById('result').value = perfil;
     document.getElementById('numeropontos').value = pontos;
+  }
+
+  function changeCSS() {
+    var lnk = document.querySelector("link");
+    lnk.setAttribute('rel', "stylesheet" );
+    lnk.setAttribute('href', "estiloSuitabilityPrint.css" );
+    var head = document.querySelector("head");
+    head.appendChild(lnk);
+  }
+
+  function confirmar() {
+    document.querySelector("#confirma").style.display = 'none';
+    window.print();
   }
 
 window.addEventListener("load", main);
