@@ -1,4 +1,3 @@
-/* Ajusta a página ao padrão tela inteira */
 html, body {
     height: 100%;
     padding: 0px;
@@ -40,7 +39,7 @@ select::-ms-expand {
   width: 100%;
   height: 100px;
 }
-/* Define as características dos campos de texto */
+
 .campos {
   background-color: #e0e2ff;
   border-top: none;
@@ -61,14 +60,6 @@ select::-ms-expand {
   border-width: thin;
   height: 25px;
   font-size: 16px;
-}
-
-#labellocal {
-  display: block;
-}
-
-#labeldata {
-  display: none;
 }
 
 .labelslarge {
@@ -369,6 +360,13 @@ select::-ms-expand {
   display: none;
 }
 
+#labellocal {
+  display: block;
+}
+
+#labeldata {
+  display: none;
+}
 
 #informacoes {
   font-family: Arial;
