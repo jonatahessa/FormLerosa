@@ -2,22 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="estiloTermoDeAdesao.css">
     <title>Termo de Adesão</title>
   </head>
   <body>
-    <table>
+    <table id="cabecalho">
       <tr>
-        <td><img src="_imagens/logo_33_lerosa.png"></td>
-        <td><p>TERMO DE ADESÃO AOS CONTRATOS DE INTERMEDIAÇÃO DE OPERAÇÕES, DE CUSTÓDIA E OUTRAS AVENÇAS, BTC, TESOURO DIRETO E CÂMBIO</p></td>
+        <td id="logo"><img src="_imagens/logo_33_lerosa.png"></td>
+        <td id="titulo"><p>TERMO DE ADESÃO AOS CONTRATOS DE INTERMEDIAÇÃO DE OPERAÇÕES, DE CUSTÓDIA E OUTRAS AVENÇAS, BTC, TESOURO DIRETO E CÂMBIO</p></td>
       </tr>
     </table>
 
     <div id="nomecompleto">
-      <label>Nome Completo: <input type="text" name="nome"></label>
-      <label>CPF/MF <input type="text" name="cpf"></label>
+      <label>Nome Completo: <input id="inputnome" class="campos" type="text" name="nome"></label>
     </div>
 
+    <div id="cpf">
+      <label>CPF/MF <input id="inputcpf" class="campos" type="text" name="cpf"></label>
+    </div>
 
+    <div id="eu">
+      <p class="paragrafos">Eu, pelo presente Instrumento, devidamente identificado acima e qualificado como <b>Cliente</b> na Ficha Cadastral, neste ato <b>declaro</b> que li, compreendi e entendi os termos e condições dos Contratos relacionados abaixo, disponíveis no site <a href="http://www.lerosa.com.br/abra-sua-conta.php" target="_blank">www.lerosa.com.br/abra-sua-conta.php</a> <b>concordo</b> expressamente com o conteúdo de todas as cláusulas destes Contratos e <b>adiro</b>, para todos os fins e efeitos de direito, os Contratos relacionados abaixo, que fazem parte integrante e inseparável deste Termo:</p>
+    </div>
 
+    <div id="termos">
+      <ul>
+        <li><p class="paragrafos">Contrato de Intermediação de <b>Operações</b> devidamente registrado no <b>5º Oficial de Registro de Títulos e Documentos de São Paulo</b>, sob nº <b>1.476.252</b>.</p></li>
+        <li><p class="paragrafos">Termo de Autorização - Banco de Títulos da CBLC <b>(BTC)</b>, conforme item 11 do referido Contrato de Intermediação de Operações.</p></li>
+        <li><p class="paragrafos">Contrato de Prestação de Serviços de <b>Custódia</b> e Outras Avenças devidamente registrado no <b>5º Oficial de Registro de Títulos e Documentos de São Paulo</b>, sob nº <b>1.476.250</b>.</p></li>
+        <li><p class="paragrafos">Contrato de Prestação de Serviços e de Administração de Contas de Custódia de Títulos Adquiridos e Vendidos no <b>Tesouro Direto</b> devidamente registrado no <b>5º Oficial de Registro de Títulos e Documentos de São Paulo</b>, sob nº <b>1.476.249</b>.</p></li>
+        <li><p class="paragrafos">Contrato de Prestação de Serviços de Assessoria e Interveniência em Operações de <b>Câmbio</b> devidamente registrado no <b>5º Oficial de Registro de Títulos e Documentos de São Paulo</b>, sob nº <b>1.476.248</b>.</p></li>
+      </ul>
+    </div>
+
+    <div id="localdata">
+      <input id="local" class="campos" type="text" name="local"></input>
+      <input id="data" maxlength="10" class="campos" type="text" name="data"></input>
+      <label id="labellocal" for="localdata">Local <span id="labeldata">e Data</span></label>
+    </div>
+
+    <div id="obsassinatura">
+      <p class="paragrafos">Assinatura do Cliente/ Representante(s) Legal(is) semelhante ao doc de identificação ou com reconhecimento de firma</p>
+    </div>
+
+    <div id="assinatura">
+      <label><input id="inputassinatura" class="campos" type="text" name="ass">Assinatura</label>
+    </div>
+
+    <div id="lerosa">
+      <p>Lerosa S/A Corretora de Valores e Câmbio</p>
+    </div>
+
+    <div id="ouvidoria">
+      <p>Ouvidoria: 0800.727.7791</p>
+    </div>
   </body>
 </html>

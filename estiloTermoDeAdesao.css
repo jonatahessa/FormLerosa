@@ -1,0 +1,157 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Calibri;
+}
+
+.campos {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 25px;
+  font-size: 16px;
+}
+
+.paragrafos {
+  text-align: justify;
+  font-size: 17px;
+}
+
+#cabecalho {
+  width: 96%;
+  margin-left: 1%;
+}
+
+#logo {
+  width: 15%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#nomecompleto {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#nomecompleto label {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#inputnome {
+  width: 80%;
+}
+
+#cpf {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#cpf label {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#inputcpf {
+  width: 60%;
+}
+
+#eu {
+  width: 93%;
+  margin-left: 2%;
+  font-size: 18px;
+}
+
+#termos {
+  width: 91%;
+  margin-left: 2%;
+}
+
+#localdata {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#local {
+  width: 26%;
+  margin-right: 0.5%;
+  text-align: center;
+}
+
+#data {
+  width: 26%;
+  position: static;
+  text-align: center;
+}
+
+#labellocal {
+  display: block;
+}
+
+#labeldata {
+  display: inline;
+}
+
+#obsassinatura {
+  width: 93%;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: -3%;
+}
+
+#obsassinatura p {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+
+#assinatura {
+  width: 50%;
+  text-align: center;
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
+
+#inputassinatura {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#lerosa {
+  width: 100%;
+  margin-top: 4%;
+}
+
+#lerosa p {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: overline;
+}
+
+#ouvidoria {
+  width: 100%;
+  text-align: center;
+}
+
+#ouvidoria p {
+  font-weight: bolder;
+  font-size: 13px;
+}
