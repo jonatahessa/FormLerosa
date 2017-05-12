@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="estiloSuitabilityForm.css">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="estiloSuitabilityForm.css"/>
     <script type="text/javascript" src="domSuitability.js">
     </script>
     <title>ANÁLISE DE PERFIL DO INVESTIDOR</title>
@@ -10,7 +10,7 @@
   <body>
     <table class="cabecalho1">
       <tr>
-        <td id="logo"><img id="imagem1" src="_imagens/logo_33_lerosa.png"></td>
+        <td id="logo"><img id="imagem1" src="_imagens/logo_33_lerosa.png"/></td>
 
         <td><p id="paragrafotitulo"><u>SUITABILITY - ANÁLISE DE PERFIL DO INVESTIDOR - PESSOA FÍSICA</u></p></td>
       </tr>
@@ -19,74 +19,74 @@
     <form>
 
     <div id="nomecompleto">
-      <label>Nome Completo<input id="camponomecompleto" class="campos" type="text" name="nomecompleto" /></label>
+      <label>Nome Completo<input id="camponomecompleto" class="campos" type="text" name="nomecompleto"/></label>
     </div>
 
     <div class="questoes">
       <p>1. Você considera que sua formação acadêmica e/ou experiência profissional lhe traz conhecimento sobre o mercado financeiro?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao1resposta1" class="radios" type="radio" name="resposta1" onclick="verifica();" value="0" />Não. (0 ponto)</label><br>
-      <label><input id="questao1resposta2" class="radios" type="radio" name="resposta1" onclick="verifica();" value="2" />Sim, mas nunca realizei operações no mercado de valores mobiliários. (2 pontos)</label><br>
-      <label><input id="questao1resposta3" class="radios" type="radio" name="resposta1" onclick="verifica();" value="4" />Sim, e tenho e/ou realizei investimentos no mercado de valores mobiliários. (4 pontos)</label><br>
+      <label><input id="questao1resposta1" class="radios" type="radio" name="resposta1" onclick="verifica();" value="0"/>Não. (0 ponto)</label><br>
+      <label><input id="questao1resposta2" class="radios" type="radio" name="resposta1" onclick="verifica();" value="2"/>Sim, mas nunca realizei operações no mercado de valores mobiliários. (2 pontos)</label><br>
+      <label><input id="questao1resposta3" class="radios" type="radio" name="resposta1" onclick="verifica();" value="4"/>Sim, e tenho e/ou realizei investimentos no mercado de valores mobiliários. (4 pontos)</label><br>
     </div>
 
     <div class="questoes">
       <p>2. Qual seu grau de escolaridade?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao2resposta1" class="radios" type="radio" name="resposta2" onclick="verifica();" value="1" />Ensino Fundamental. (1 ponto)</label>
-      <label><input id="questao2resposta2" class="radios" type="radio" name="resposta2" onclick="verifica();" value="2" />Ensino Médio. (2 pontos)</label><br>
-      <label><input id="questao2resposta3" class="radios" type="radio" name="resposta2" onclick="verifica();" value="3" />Ensino Superior. (3 pontos)</label>
-      <label><input id="questao2resposta4" class="radios" type="radio" name="resposta2" onclick="verifica();" value="4" />Pós Graduação, Mestrado ou Doutorado. (4 pontos)</label>
+      <label><input id="questao2resposta1" class="radios" type="radio" name="resposta2" onclick="verifica();" value="1"/>Ensino Fundamental. (1 ponto)</label>
+      <label><input id="questao2resposta2" class="radios" type="radio" name="resposta2" onclick="verifica();" value="2"/>Ensino Médio. (2 pontos)</label><br>
+      <label><input id="questao2resposta3" class="radios" type="radio" name="resposta2" onclick="verifica();" value="3"/>Ensino Superior. (3 pontos)</label>
+      <label><input id="questao2resposta4" class="radios" type="radio" name="resposta2" onclick="verifica();" value="4"/>Pós Graduação, Mestrado ou Doutorado. (4 pontos)</label>
     </div>
 
     <div class="questoes">
       <p>3. Qual a finalidade dos seus investimentos?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao3resposta1" class="radios" type="radio" name="resposta3" onclick="verifica();" value="1" />Preservar o poder de compra sem comprometer o principal investido. (1 ponto)</label><br>
-      <label><input id="questao3resposta2" class="radios" type="radio" name="resposta3" onclick="verifica();" value="2" />Obter ganhos que superem a inflação a médio e longo prazos. (2 pontos)</label><br>
-      <label><input id="questao3resposta3" class="radios" type="radio" name="resposta3" onclick="verifica();" value="4" />Obter ganhos expressivos a médio e longo prazos, ainda que implique em potencial perda parcial ou total do recurso investido. (4 pontos)</label><br>
+      <label><input id="questao3resposta1" class="radios" type="radio" name="resposta3" onclick="verifica();" value="1"/>Preservar o poder de compra sem comprometer o principal investido. (1 ponto)</label><br>
+      <label><input id="questao3resposta2" class="radios" type="radio" name="resposta3" onclick="verifica();" value="2"/>Obter ganhos que superem a inflação a médio e longo prazos. (2 pontos)</label><br>
+      <label><input id="questao3resposta3" class="radios" type="radio" name="resposta3" onclick="verifica();" value="4"/>Obter ganhos expressivos a médio e longo prazos, ainda que implique em potencial perda parcial ou total do recurso investido. (4 pontos)</label><br>
     </div>
 
     <div class="questoes">
       <p>4. Com relação à necessidade futura de recursos, em quanto tempo você espera resgatar os recursos investidos?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao4resposta1" class="radios" type="radio" name="resposta4" onclick="verifica();" value="0" />De 1 mês a 6 meses. (0 ponto)</label>
-      <label><input id="questao4resposta2" class="radios" type="radio" name="resposta4" onclick="verifica();" value="1" />De 7 meses a 12 meses. (1 ponto)</label><br>
-      <label><input id="questao4resposta3" class="radios" type="radio" name="resposta4" onclick="verifica();" value="2" />De 13 meses a 24 meses. (2 pontos)</label>
-      <label><input id="questao4resposta4" class="radios" type="radio" name="resposta4" onclick="verifica();" value="4" />Acima de 24 meses (4 pontos)</label>
+      <label><input id="questao4resposta1" class="radios" type="radio" name="resposta4" onclick="verifica();" value="0"/>De 1 mês a 6 meses. (0 ponto)</label>
+      <label><input id="questao4resposta2" class="radios" type="radio" name="resposta4" onclick="verifica();" value="1"/>De 7 meses a 12 meses. (1 ponto)</label><br>
+      <label><input id="questao4resposta3" class="radios" type="radio" name="resposta4" onclick="verifica();" value="2"/>De 13 meses a 24 meses. (2 pontos)</label>
+      <label><input id="questao4resposta4" class="radios" type="radio" name="resposta4" onclick="verifica();" value="4"/>Acima de 24 meses (4 pontos)</label>
     </div>
 
     <div class="questoes">
       <p>5. O que você faria caso o valor de seus investimentos caísse mais de 10%?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao5resposta1" class="radios" type="radio" name="resposta5" onclick="verifica();" value="1" />Venderia imediatamente. (1 ponto)</label><br>
-      <label><input id="questao5resposta2" class="radios" type="radio" name="resposta5" onclick="verifica();" value="2" />Manteria a carteira de investimentos, pois entendo que isso pode acontecer para determinados ativos, ainda que temporariamente. (2 pontos)</label><br>
-      <label><input id="questao5resposta3" class="radios" type="radio" name="resposta5" onclick="verifica();" value="4" />Manteria a carteira de investimentos, podendo ainda, realizar mais investimentos. (4 pontos)</label><br>
+      <label><input id="questao5resposta1" class="radios" type="radio" name="resposta5" onclick="verifica();" value="1"/>Venderia imediatamente. (1 ponto)</label><br>
+      <label><input id="questao5resposta2" class="radios" type="radio" name="resposta5" onclick="verifica();" value="2"/>Manteria a carteira de investimentos, pois entendo que isso pode acontecer para determinados ativos, ainda que temporariamente. (2 pontos)</label><br>
+      <label><input id="questao5resposta3" class="radios" type="radio" name="resposta5" onclick="verifica();" value="4"/>Manteria a carteira de investimentos, podendo ainda, realizar mais investimentos. (4 pontos)</label><br>
     </div>
 
     <div class="questoes">
       <p>6. Para obter maiores retornos no longo prazo, qual seria o seu percentual de perda aceitável?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao6resposta1" class="radios" type="radio" name="resposta6" onclick="verifica();" value="1" />Até 10%. (1 ponto)</label>
-      <label><input id="questao6resposta2" class="radios" type="radio" name="resposta6" onclick="verifica();" value="2" />De 10,01 a 20%. (2 pontos)</label><br>
-      <label><input id="questao6resposta3" class="radios" type="radio" name="resposta6" onclick="verifica();" value="3" />De 20,01 a 30%. (3 pontos)</label>
-      <label><input id="questao6resposta4" class="radios" type="radio" name="resposta6" onclick="verifica();" value="4" />Acima de 30,01%. (4 pontos)</label>
+      <label><input id="questao6resposta1" class="radios" type="radio" name="resposta6" onclick="verifica();" value="1"/>Até 10%. (1 ponto)</label>
+      <label><input id="questao6resposta2" class="radios" type="radio" name="resposta6" onclick="verifica();" value="2"/>De 10,01 a 20%. (2 pontos)</label><br>
+      <label><input id="questao6resposta3" class="radios" type="radio" name="resposta6" onclick="verifica();" value="3"/>De 20,01 a 30%. (3 pontos)</label>
+      <label><input id="questao6resposta4" class="radios" type="radio" name="resposta6" onclick="verifica();" value="4"/>Acima de 30,01%. (4 pontos)</label>
     </div>
 
     <div class="questoes">
       <p>7. Seus investimentos no mercado de valores mobiliários, na Lerosa e/ou em outras Instituições, representam que percentual do total de seu patrimônio?</p>
     </div>
     <div class="respostas">
-      <label><input id="questao7resposta1" class="radios" type="radio" name="resposta7" onclick="verifica();" value="1" />Menos de 30%. (1 ponto)</label>
-      <label><input id="questao7resposta2" class="radios" type="radio" name="resposta7" onclick="verifica();" value="2" />De 30,01% a 40%. (2 pontos)</label><br>
-      <label><input id="questao7resposta3" class="radios" type="radio" name="resposta7" onclick="verifica();" value="3" />De 40,01% a 50%. (3 pontos)</label>
-      <label><input id="questao7resposta4" class="radios" type="radio" name="resposta7" onclick="verifica();" value="4" />Mais de 50,01%. (4 pontos)</label>
+      <label><input id="questao7resposta1" class="radios" type="radio" name="resposta7" onclick="verifica();" value="1"/>Menos de 30%. (1 ponto)</label>
+      <label><input id="questao7resposta2" class="radios" type="radio" name="resposta7" onclick="verifica();" value="2"/>De 30,01% a 40%. (2 pontos)</label><br>
+      <label><input id="questao7resposta3" class="radios" type="radio" name="resposta7" onclick="verifica();" value="3"/>De 40,01% a 50%. (3 pontos)</label>
+      <label><input id="questao7resposta4" class="radios" type="radio" name="resposta7" onclick="verifica();" value="4"/>Mais de 50,01%. (4 pontos)</label>
     </div>
 
     <div class="questoes">
@@ -108,36 +108,36 @@
         </tr>
         <tr>
           <td class="celulaquestao">Renda Fixa: Tesouro Direto, Títulos Públicos, Títulos Privados e Debêntures.</td>
-          <td class="celulasresposta"><label><input id="questao8resposta1" class="inputstable radios" type="radio" name="rendafixa" onclick="verifica();" value="1" />(1 Ponto)</label></td>
-          <td class="celulasresposta"><label><input id="questao8resposta2" class="inputstable radios" type="radio" name="rendafixa" onclick="verifica();" value="2" />(2 Pontos)</label></td>
-          <td class="celulasresposta"><label><input id="questao8resposta3" class="inputstable radios" type="radio" name="rendafixa" onclick="verifica();" value="3" />(3 Pontos)</label></td>
+          <td class="celulasresposta"><label><input id="questao8resposta1" class="inputstable radios" type="radio" name="rendafixa" onclick="verifica();" value="1"/>(1 Ponto)</label></td>
+          <td class="celulasresposta"><label><input id="questao8resposta2" class="inputstable radios" type="radio" name="rendafixa" onclick="verifica();" value="2"/>(2 Pontos)</label></td>
+          <td class="celulasresposta"><label><input id="questao8resposta3" class="inputstable radios" type="radio" name="rendafixa" onclick="verifica();" value="3"/>(3 Pontos)</label></td>
         </tr>
       </table>
       <table class="tables" border="1">
         <td class="celulaquestao">Renda Variável: Ações à vista, Termo Comprador, Termo Vendedor, BTC Doador, BTC Tomador, Opções Cobertas e Opções Descobertas.</td>
-        <td class="celulasresposta"><label><input id="questao9resposta1" class="inputstable radios" type="radio" name="rendavariavel" onclick="verifica();" value="1" />(1 Ponto)</label></td>
-        <td class="celulasresposta"><label><input id="questao9resposta2" class="inputstable radios" type="radio" name="rendavariavel" onclick="verifica();" value="2" />(2 Pontos)</label></td>
-        <td class="celulasresposta"><label><input id="questao9resposta3" class="inputstable radios" type="radio" name="rendavariavel" onclick="verifica();" value="3" />(3 Pontos)</label></td>
+        <td class="celulasresposta"><label><input id="questao9resposta1" class="inputstable radios" type="radio" name="rendavariavel" onclick="verifica();" value="1"/>(1 Ponto)</label></td>
+        <td class="celulasresposta"><label><input id="questao9resposta2" class="inputstable radios" type="radio" name="rendavariavel" onclick="verifica();" value="2"/>(2 Pontos)</label></td>
+        <td class="celulasresposta"><label><input id="questao9resposta3" class="inputstable radios" type="radio" name="rendavariavel" onclick="verifica();" value="3"/>(3 Pontos)</label></td>
       </table>
 
       <table class="tables" border="1">
         <td class="celulaquestao">Derivativos Financeiros: DI1, Dólar, Euro, Ibovespa, Commodities: Boi Gordo, Café, Etanol, Ouro. Soja, Milho, Operações Estruturadas e Minicontratos referenciados nos derivativos financeiros e commodities; Balcão (Swap e Opções), dentre outros.</td>
-        <td class="celulasresposta"><label><input id="questao10resposta1" class="inputstable radios" type="radio" name="derivativosfinanceiros" onclick="verifica();" value="0" />(0 Ponto)</label></td>
-        <td class="celulasresposta"><label><input id="questao10resposta2" class="inputstable radios" type="radio" name="derivativosfinanceiros" onclick="verifica();" value="1" />(1 Ponto)</label></td>
-        <td class="celulasresposta"><label><input id="questao10resposta3" class="inputstable radios" type="radio" name="derivativosfinanceiros" onclick="verifica();" value="4" />(4 Pontos)</label></td>
+        <td class="celulasresposta"><label><input id="questao10resposta1" class="inputstable radios" type="radio" name="derivativosfinanceiros" onclick="verifica();" value="0"/>(0 Ponto)</label></td>
+        <td class="celulasresposta"><label><input id="questao10resposta2" class="inputstable radios" type="radio" name="derivativosfinanceiros" onclick="verifica();" value="1"/>(1 Ponto)</label></td>
+        <td class="celulasresposta"><label><input id="questao10resposta3" class="inputstable radios" type="radio" name="derivativosfinanceiros" onclick="verifica();" value="4"/>(4 Pontos)</label></td>
       </table>
 
       <table class="tables" border="1">
         <td class="celulaquestao">Fundos Imobiliário, de Renda Variável, de Renda Fixa, Mutimercado e Clube de Investimento</td>
-          <td class="celulasresposta"><label><input id="questao11resposta1" class="inputstable radios" type="radio" name="fundos" onclick="verifica();" value="0" />(0 Ponto)</label></td>
-          <td class="celulasresposta"><label><input id="questao11resposta2" class="inputstable radios" type="radio" name="fundos" onclick="verifica();" value="1" />(1 Ponto)</label></td>
-          <td class="celulasresposta"><label><input id="questao11resposta3" class="inputstable radios" type="radio" name="fundos" onclick="verifica();" value="2" />(2 Pontos)</label></td>
+          <td class="celulasresposta"><label><input id="questao11resposta1" class="inputstable radios" type="radio" name="fundos" onclick="verifica();" value="0"/>(0 Ponto)</label></td>
+          <td class="celulasresposta"><label><input id="questao11resposta2" class="inputstable radios" type="radio" name="fundos" onclick="verifica();" value="1"/>(1 Ponto)</label></td>
+          <td class="celulasresposta"><label><input id="questao11resposta3" class="inputstable radios" type="radio" name="fundos" onclick="verifica();" value="2"/>(2 Pontos)</label></td>
       </tableonclick
     </div>
 
     <table id="cabecalho2">
       <tr>
-        <td id="logo"><img id="imagem1" src="_imagens/logo_33_lerosa.png"></td>
+        <td id="logo"><img id="imagem1" src="_imagens/logo_33_lerosa.png"/></td>
 
         <td><p id="paragrafotitulo"><u>SUITABILITY - ANÁLISE DE PERFIL DO INVESTIDOR - PESSOA FÍSICA</u></p></td>
       </tr>
@@ -167,7 +167,7 @@
         <option value="eventos">Eventos</option>
         <option value="amigos">Amigos</option>
         <option value="outros">Outros: Especificar</option>
-      </select></label><input id="inputoutros" class="campos" type="text" name="outros">
+      </select></label><input id="inputoutros" class="campos" type="text" name="outros"/>
     </div>
 
     <div class="fonte" id="declaracoes">
@@ -183,15 +183,15 @@
     </div>
 
     <div class="fonte" id="declaraleitura">
-      <p><input type="checkbox" name="daclaraleitura">Declaro que li no site da Lerosa e compreendi as características e produtos/serviços que melhor se adaptam a cada perfil de investimento, inclusive o meu. Também declaro intenção de realizar operações/produtos previstos em todos os perfis de investimento, independente do meu perfil. Nesse caso, estou ciente de eventual inadequação de perfil e solicito que a Lerosa não envie-me a comunicação de inadequação de perfil, decorrente das operações realizadas, conforme determina a legislação. Para todos os efeitos, assumo total responsabilidade sobre esta decisão e estou ciente dos riscos inerentes dos produtos e serviços disponíveis no mercado de valores mobiliários.</p>
+      <p><input type="checkbox" name="daclaraleitura"/>Declaro que li no site da Lerosa e compreendi as características e produtos/serviços que melhor se adaptam a cada perfil de investimento, inclusive o meu. Também declaro intenção de realizar operações/produtos previstos em todos os perfis de investimento, independente do meu perfil. Nesse caso, estou ciente de eventual inadequação de perfil e solicito que a Lerosa não envie-me a comunicação de inadequação de perfil, decorrente das operações realizadas, conforme determina a legislação. Para todos os efeitos, assumo total responsabilidade sobre esta decisão e estou ciente dos riscos inerentes dos produtos e serviços disponíveis no mercado de valores mobiliários.</p>
     </div>
 
     <div id="local">
-      <label><input class="campos" id="inputlocal" type="text" name="local">Local</label>
+      <label><input class="campos" id="inputlocal" type="text" name="local"/>Local</label>
     </div>
 
     <div id="data">
-      <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data">Data</label>
+      <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data"/>Data</label>
     </div>
     <div id="botao">
       <button type="button" id="imprimir" name="button">Imprimir</button>
@@ -201,7 +201,7 @@
   </form>
 
     <div id="assinatura">
-      <label><input id="inputassinatura" class="campos" type="text" name="assinatura">Assinatura</label>
+      <label><input id="inputassinatura" class="campos" type="text" name="assinatura"/>Assinatura</label>
     </div>
   </body>
 </html>
